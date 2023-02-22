@@ -1,2 +1,1 @@
-# defective-week-6965
-Clone of belk.com
+Hi this is the project of the fullStack to Clone belk.com
