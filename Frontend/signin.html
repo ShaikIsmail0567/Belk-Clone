@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <h4>FREE SHIPPING @ $59</h4>
+            <a href="">
+                <h4>Enable Accessibility</h4>
+            </a>
+        </nav>
+        <nav class="mainnav">
+            <a href="index.html">
+                <div class="logoimg">
+                    <img src="./logo.PNG" alt="" />
+                </div>
+            </a>
+
+            <div class="search">
+                <input type="text" placeholder="What can we help you find?" />
+                <button class="searchbtn"> Search</button>
+            </div>
+            <div class="itemlist" style="display: flex;">
+                <div class="items1">
+                    <a href="">Belk Rewards</a>
+                </div>
+                <div class="items3">
+                    <a href="">My Coupons </a>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()"><i class="fas fa-user-circle"></i>My Account
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="signin.html" id="login">Sign In</a>
+                        <a href="signup.html" id="create">Create Account</a>
+                        <a href="#"><i class="fas fa-first-order"></i>Find My order</a>
+                        <a href="#"><i class="fas fa-first-order"></i>Belk Rewards</a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i>Find a Wish List</a>
+                        <a href="#"><i class="fas fa-gift"></i>Find a Registry</a>
+                    </div>
+                </div>
+                <div class="items4">
+                    <a href=""> <i class="fas fa-shopping-bag"></i> Bag</a>
+                </div>
+            </div>
+        </nav>
+        <div id="container">
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="./products.html">Gifts</a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>Gifts</h3>
+                                <ul>
+                                    <li>Beauty gifts</li>
+                                    <li>Cozy Shop</li>
+                                    <li>Designer Handbags</li>
+                                    <li> Eco Friendly</li>
+                                    <li>Fine Jewelry</li>
+                                    <li>For the Trend Setter</li>
+                                    <li>Gift Cards</li>
+                                    <li>Gift with a Purpose</li>
+                                    <li>Intimates</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>All Gifts</h3>
+                                <ul>
+                                    <li>Gifts for Her</li>
+                                    <li>Gifts for Him</li>
+                                    <li>Gifts for Kids</li>
+                                    <li> Gifts for Pets</li>
+                                    <li>Gifts for the Home</li>
+                                    <li>Gift Cards</li>
+                                    <li>Shop All...</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Just for Kids</h3>
+                                <ul>
+                                    <li>Active Gear</li>
+                                    <li>Kids Fan Gear</li>
+                                    <li>Toys & Games</li>
+                                    <li> Gift Cards</li>
+                                    <li> Shop All...</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Gifts by price</h3>
+                                <ul>
+                                    <li>Under $10</li>
+                                    <li>Under $25</li>
+                                    <li>Under $50</li>
+                                    <li>Under $100</li>
+                                    <li>Over $100</li>
+                                    <li> Gift Cards</li>
+                                    <li>Shop All...</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="megamenuitems">
+                                <h3>Favorite Brands</h3>
+                                <ul>
+                                    <li>Brahmin</li>
+                                    <li>Estee Lauder</li>
+                                    <li>Free People</li>
+                                    <li> Michael Kors</li>
+                                    <li>Ralph Lauren</li>
+                                    <li>Shop All..</li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html">Women </a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>Women</h3>
+                                <ul>
+                                    <li>New Arrivals</li>
+                                    <li>Active Shop</li>
+                                    <li>Contemporary</li>
+                                    <li> Cozy Shop</li>
+                                    <li>The Culture Shop</li>
+                                    <li>Denim Shop</li>
+                                    <li>Designer</li>
+                                    <li>Fan Gear</li>
+                                    <li>Gifts for Her</li>
+                                    <li>Pajamas & Robes</li>
+                                    <li>Womens's Clearance</li>
+                                    <li>Gift Cards</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Women's Clothing</h3>
+                                <ul>
+                                    <li>Bras,Panties & Lingerie</li>
+                                    <li>Coats & OuterWear</li>
+                                    <li>Dresses</li>
+                                    <li> Pants & Leggings</li>
+                                    <li>Sweaters</li>
+                                    <li>Shop All...</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Women's Tops</h3>
+                                <ul>
+                                    <li>Blouses</li>
+                                    <li>Button Down Tops</li>
+                                    <li>Hoodies & Sweatshirts</li>
+                                    <li> Tunics</li>
+                                    <li>T-Shirts</li>
+                                    <li>Shop All...</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html">Men </a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>FACE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+                                    <li>Makeup Remover</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>EYE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>EYE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>EYE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html">Kids </a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>Kids</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>BATH ACCESSORIES</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>BATH & SHOWER</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html"></a>Shoes</a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>FACE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+                                    <li>Makeup Remover</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>EYE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html"></a>Handbags</a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>Handbags</h3>
+                                <ul>
+                                    <li>Beauty gifts</li>
+                                    <li>Cozy Shop</li>
+                                    <li>Designer Handbags</li>
+                                    <li> Eco Friendly</li>
+                                    <li>Fine Jewelry</li>
+                                    <li>For the Trend Setter</li>
+                                    <li>Gift Cards</li>
+                                    <li>Gift with a Purpose</li>
+                                    <li>Intimates</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Handbags</h3>
+                                <ul>
+                                    <li>Beauty gifts</li>
+                                    <li>Cozy Shop</li>
+                                    <li>Designer Handbags</li>
+                                    <li> Eco Friendly</li>
+                                    <li>Fine Jewelry</li>
+                                    <li>For the Trend Setter</li>
+                                    <li>Gift Cards</li>
+                                    <li>Gift with a Purpose</li>
+                                    <li>Intimates</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Handbags</h3>
+                                <ul>
+                                    <li>Beauty gifts</li>
+                                    <li>Cozy Shop</li>
+                                    <li>Designer Handbags</li>
+                                    <li> Eco Friendly</li>
+                                    <li>Fine Jewelry</li>
+                                    <li>For the Trend Setter</li>
+                                    <li>Gift Cards</li>
+                                    <li>Gift with a Purpose</li>
+                                    <li>Intimates</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li>
+                        <a href="products.html"></a>Jewelry</a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>NATURAL SKIN CARE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>NATURAL HAIR CARE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html"></a>Beauty</a>
+                        <div class="megamenu">
+                            <div class="megamenubuttons">
+                                <h3>Top Brands</h3>
+                                <hr>
+                                <button>LAKME</button>
+                                <button>L-OREAL PARIS</button>
+                                <button>JOY</button>
+                                <button>AROMA MAGIC</button>
+                                <button>LOTUS HERBALS</button>
+                                <button>BIOTIQUE</button>
+                                <button>MAYBELINE</button>
+                                <button>VLCC</button>
+                                <button>VEGA</button>
+                                <button>MAYBELINE</button>
+                                <button>MAMAEARTH</button>
+                                <button>CHICCO</button>
+                                <button>VEGA</button>
+                                <button>MAMAEARTH</button>
+                            </div>
+                            <div class="megamenubuttons">
+                                <h3>Top Brands</h3>
+                                <hr>
+                                <button>LAKME</button>
+                                <button>L-OREAL PARIS</button>
+                                <button>JOY</button>
+                                <button>AROMA MAGIC</button>
+                                <button>LOTUS HERBALS</button>
+                                <button>BIOTIQUE</button>
+                                <button>MAYBELINE</button>
+                                <button>VLCC</button>
+                                <button>VEGA</button>
+                                <button>MAYBELINE</button>
+                                <button>MAMAEARTH</button>
+                                <button>CHICCO</button>
+                                <button>VEGA</button>
+                                <button>MAMAEARTH</button>
+                            </div>
+                            <div class="megamenubuttons">
+                                <h3>Top Brands</h3>
+                                <hr>
+                                <button>LAKME</button>
+                                <button>L-OREAL PARIS</button>
+                                <button>JOY</button>
+                                <button>AROMA MAGIC</button>
+                                <button>LOTUS HERBALS</button>
+                                <button>BIOTIQUE</button>
+                                <button>MAYBELINE</button>
+                                <button>VLCC</button>
+                                <button>VEGA</button>
+                                <button>MAYBELINE</button>
+                                <button>MAMAEARTH</button>
+                                <button>CHICCO</button>
+                                <button>VEGA</button>
+                                <button>MAMAEARTH</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./products.html">Home</a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>Gifts</h3>
+                                <ul>
+                                    <li>Beauty gifts</li>
+                                    <li>Cozy Shop</li>
+                                    <li>Designer Handbags</li>
+                                    <li> Eco Friendly</li>
+                                    <li>Fine Jewelry</li>
+                                    <li>For the Trend Setter</li>
+                                    <li>Gift Cards</li>
+                                    <li>Gift with a Purpose</li>
+                                    <li>Intimates</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>All Gifts</h3>
+                                <ul>
+                                    <li>Gifts for Her</li>
+                                    <li>Gifts for Him</li>
+                                    <li>Gifts for Kids</li>
+                                    <li> Gifts for Pets</li>
+                                    <li>Gifts for the Home</li>
+                                    <li>Gift Cards</li>
+                                    <li>Shop All...</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Just for Kids</h3>
+                                <ul>
+                                    <li>Active Gear</li>
+                                    <li>Kids Fan Gear</li>
+                                    <li>Toys & Games</li>
+                                    <li> Gift Cards</li>
+                                    <li> Shop All...</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Gifts by price</h3>
+                                <ul>
+                                    <li>Under $10</li>
+                                    <li>Under $25</li>
+                                    <li>Under $50</li>
+                                    <li>Under $100</li>
+                                    <li>Over $100</li>
+                                    <li> Gift Cards</li>
+                                    <li>Shop All...</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="megamenuitems">
+                                <h3>Favorite Brands</h3>
+                                <ul>
+                                    <li>Brahmin</li>
+                                    <li>Estee Lauder</li>
+                                    <li>Free People</li>
+                                    <li> Michael Kors</li>
+                                    <li>Ralph Lauren</li>
+                                    <li>Shop All..</li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html">Bed&Bath </a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>Women</h3>
+                                <ul>
+                                    <li>New Arrivals</li>
+                                    <li>Active Shop</li>
+                                    <li>Contemporary</li>
+                                    <li> Cozy Shop</li>
+                                    <li>The Culture Shop</li>
+                                    <li>Denim Shop</li>
+                                    <li>Designer</li>
+                                    <li>Fan Gear</li>
+                                    <li>Gifts for Her</li>
+                                    <li>Pajamas & Robes</li>
+                                    <li>Womens's Clearance</li>
+                                    <li>Gift Cards</li>
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Women's Clothing</h3>
+                                <ul>
+                                    <li>Bras,Panties & Lingerie</li>
+                                    <li>Coats & OuterWear</li>
+                                    <li>Dresses</li>
+                                    <li> Pants & Leggings</li>
+                                    <li>Sweaters</li>
+                                    <li>Shop All...</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>Women's Tops</h3>
+                                <ul>
+                                    <li>Blouses</li>
+                                    <li>Button Down Tops</li>
+                                    <li>Hoodies & Sweatshirts</li>
+                                    <li> Tunics</li>
+                                    <li>T-Shirts</li>
+                                    <li>Shop All...</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html">Conn's X Belk </a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>FACE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+                                    <li>Makeup Remover</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>EYE</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+                                    <li>Highlighters</li>
+                                    <li>Loose Powder</li>
+                                    <li>Makeup Kits</li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="products.html">Brands </a>
+                        <div class="megamenu">
+                            <div class="megamenuitems">
+                                <h3>Kids</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+                                    <li>Concealer</li>
+                                    <li>Compact & Powder</li>
+                                    <li>Face Primer</li>
+                                    <li>Foundation</li>
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>BATH ACCESSORIES</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+                                    <li>Contour</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="megamenuitems">
+                                <h3>BATH & SHOWER</h3>
+                                <ul>
+                                    <li>BB Cream</li>
+                                    <li>Blush</li>
+                                    <li>Bronze</li>
+                                    <li> Cream</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+    <div id="main">
+        <div id="main1">
+            <div id="main2">
+
+                <h3>My Account</h3>
+                <input id="mail" type="text" placeholder=" Email">
+                <p>Forgot Password?</p>
+                <input id="pass" type="password" placeholder=" Password">
+                <button id="signinbtn" onclick="onsignin()">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <div id="switch">
+        <div>
+            <p><b>Keep me signed in -</b>Uncheck if using a public device</p>
+        </div>
+        <div>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+        </div>
+      
+    </div>
+    <p>---------------------------------- or -------------------------------------</p>
+    <br>
+    <button>Create Account</button>
+</body>
+
+</html>
+<script>
+       const onsignin=()=>{
+            const payload={
+                
+                email:document.getElementById("mail").value,
+                pwd:document.getElementById("pass").value
+            }
+            fetch("https://panicky-hosiery-tuna.cyclic.app//users/login",{
+                method:"POST",
+                headers:{
+                    "content-type":"application/json"
+                },
+                body:JSON.stringify(payload)
+            }).then(res=>res.json())
+            .then(res=>{
+                console.log(res),
+                localStorage.setItem("token",res.token)
+                window.location.href="index.html"
+            })
+            .catch(err=>console.log(err))
+        }
+</script>
