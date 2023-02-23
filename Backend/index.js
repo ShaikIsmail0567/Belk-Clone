@@ -6,9 +6,9 @@ const { usersRouter } = require("./routes/users.router");
 const { productsRouter } = require("./routes/products.route");
 
 const app = express();
-
+const bodyParser = require("body-parser");
 app.use(express.json(), cors());
-
+app.use(bodyParser.json());
 app.use("/users", usersRouter);
 app.use("/products", productsRouter);
 
