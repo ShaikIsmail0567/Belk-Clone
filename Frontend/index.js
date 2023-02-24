@@ -141,3 +141,8 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// let userdetails=JSON.parse(localStorage.getItem("userdetails"))
+// console.log(userdetails)
+// let name=document.getElementById("UserName")
+// name.innerText=userdetails[0].UserFirstName
