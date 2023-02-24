@@ -7,6 +7,10 @@
     <title>Signin</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="signin.css">
+    <link
+      rel="icon"
+      href="./logo.PNG"
+    />
 </head>
 <body>
     <header>
@@ -730,7 +734,7 @@
                 email:document.getElementById("mail").value,
                 pwd:document.getElementById("pass").value
             }
-            fetch("https://panicky-hosiery-tuna.cyclic.app/users/login",{
+           fetch("https://panicky-hosiery-tuna.cyclic.app/users/login",{
                 method:"POST",
                 headers:{
                     "content-type":"application/json"
@@ -738,10 +742,15 @@
                 body:JSON.stringify(payload)
             }).then(res=>res.json())
             .then(res=>{
-                console.log(res),
+                console.log(res,res.token)
+                alert(res.message)
                 localStorage.setItem("token",res.token)
-                window.location.href="index.html"
+                if(res.message!=="Password does not match the given email"){
+                    window.location.href="index.html"
+                }
+                
             })
             .catch(err=>console.log(err))
+            
         }
 </script>

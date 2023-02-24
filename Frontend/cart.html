@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Cart</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="cart.css">
     <link
       rel="icon"
       href="./logo.PNG"
@@ -54,7 +53,8 @@
                     </div>
                 </div>
                 <div class="items4">
-                    <a href="cart.html"> <i class="fas fa-shopping-bag"></i> Bag</a>
+                    <a href="" > <i class="fas fa-shopping-bag"></i> Bag</a>
+                    <span id="cartprice">₹0.00</span>
                 </div>
             </div>
         </nav>
@@ -699,81 +699,64 @@
 
     </header>
     
-    <div class="cont">
-      
-        <div class="left">
-          
-          
-          <div class="same">Price</div>
-          <input type="range" min="1" max="5000" class="slide" value="5000">
-          <div class="scale">
-            <p>Rs. 1</p>
-            <p>Rs. 5000</p>
-          </div>
-          <div class="scale2">
-            <input type="number" id="lower" placeholder="min">
-            <p>-</p>
-            <input type="number" id="upper" placeholder="max">
-            <button id="filterbtn">GO</button>
-          </div>
-  
-          <div class="same">Warranty</div>
-          <div class="same2">
-            <input type="checkbox">
-            <label>6 Months</label><br>
-            <input type="checkbox">
-            <label>1 Year</label><br>
-          </div>
-  
-          <div class="same">Discount %</div>
-          <div class="same2">
-            <input type="checkbox">
-            <label>30 - 40</label><br>
-            <input type="checkbox">
-            <label>40 - 50</label><br>
-            <input type="checkbox">
-            <label>50 - 60</label><br>
-            <input type="checkbox">
-            <label>60 - 70</label><br>
-            <input type="checkbox">
-            <label>70 - 80</label><br>
-            <input type="checkbox">
-            <label>80 - 90</label>
-          </div>
-  
-          
-          
+    <div id="mainDIV">
+
+        <div id="banner">
+            <div id="ite">
+                <p>ITEMS</p>
+            </div>
+            <div id="PQS">
+                <div>
+                    <p>PRICE</p>
+                </div>
+                <div>
+                    <p>QTY</p>
+                </div>
+                <div>
+                    <P>SUBTOTAL</P>
+                </div>
+            </div>
         </div>
-        <div class="right">
-    
-          <div class="lower">
-            <div class="sortbox">
-              <div>
-                <h2>T-Shirts and Shirts</h2>
-              </div>
-              <div id="search">
+        <div id="okay">
+            <div id="main">
+            </div>
+           
+        </div>
+
+        <div id="right">
+            <div id="upper">
+                <p>SUMMARY</p>
+                <div id="container1">
+                    <p>ESTIMATE SHIPPING AND TAX</p>
                   
-                  <input type="text" placeholder="Search in Catergory" oninput="filter1()" id="query">
-  
-              </div>
-              <div>
-                <label>Sort By:</label>
-                <select class="sortby" onchange="filter()">
-                  <option value="popular">Popularity</option>
-                  <option value="low">Price Low To High</option>
-                  <option value="high">Price High To Low</option>
-                  <option value="discount">Discount</option>
-                  <option value="fresh">Fresh Arrivals</option>
-                </select>
-              </div>
+                </div>
+               
+                <div id="subtotal">
+                    <span>Subtotal</span>
+                    <h4 style="margin-left:200px ;">&#8377</h4>
+                    <h3 id="total"></h3>
+                </div>
+                <div id="shipping">
+                    <span>Shipping charges</span>
+                    <h4 style="margin-left:200px ;">&#8377</h4>
+                    <h3>55.0</h3>
+                </div>
+                <div id="Ototal">
+                    <span>Order Total Incl.GST</span>
+                    <h4 style="margin-left:150px;">&#8377</h4>
+                    <h3 id="wholeTot"></h3>
+                </div>
+                
+                <!-- here -->
+
             </div>
-            <div class="products">
-  
+            <div id="lower">
+                <div id="pinki">
+                    <h4>PROCEED TO CHECKOUT</h4>
+                </div>
             </div>
-            
-          </div>
         </div>
-      </div>
+    </div>
 
     <footer>
         <div id="footer">
@@ -851,5 +834,4 @@
     </footer>
 </body>
 </html>
-
-<script src="products.js"></script>
+<script src="cart.js"></script>
